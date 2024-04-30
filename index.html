@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <script src="zone.js"></script>
+        <link rel="stylesheet" href="zone.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+
+    <body id="hpbody">
+        <header>
+            <div class="box">
+                <form id="searchbar">
+                    
+                    <input type="text" name="search"
+                            id="search" placeholder="search..">
+                </form>
+            </div>
+            <div class="stick">
+                <nav class="mainnav">
+                    <ul>
+                        <li><a target="_self" href="homepage.html">Home</a></li> 
+                        <li><a target="_self" href="ram.html">RAM</a></li> <!-- add link to ram page -->
+                        <li><a target="_self" href="motherboard.html">Motherboard</a></li> <!-- add link to motherboard page -->
+                        <li><a target="_self" href="case.html">Cases</a></li><!-- add link to cameras page -->
+                        <li><a target="_self" href="gpu.html">GPU</a></li>
+                        <li><a target="_self" href="cpu.html">CPU</a></li>
+                        <li><a target="_self" href="storage.html">Storage</a></li>
+                        <li><a target="_self" href="monitors.html">Monitors</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        
+        <div id="border">
+            <main >
+                <div class="product-container">
+                    <div class="product">
+                        <figure>
+                            <a target="_self" href="ram.html"><img id="img1" alt="RAM"  src="images/Ram 3.png"  ></a> 
+                            <figcaption class="product-cap">RAM</figcaption>
+                        </figure>
+                        <ol class="hide_l" id="ram_l">
+                            <li>crucial ballistix</li>
+                            <li>crucial ballistix RGB</li>
+                            <li>Corsair Pro</li>
+                            <li>Corsair Black</li>
+                        </ol>
+                        <button class="b_sl"
+                        id="bs_ram" type="button" onclick="appear('ram_l','bs_ram','bh_ram')">Show Products</button>
+                        <button class="b_hl"
+                        id="bh_ram" type="button" onclick="disappear('ram_l','bs_ram','bh_ram')">Hide Products</button>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <a target="_self" href="motherboard.html"><img alt="Motherboards" src="images/Motherboard_1.png"></a> 
+                            <figcaption class="product-cap">Motherboards</figcaption>
+                        </figure>
+                        <ol class="hide_l" id="mb_l">
+                            <li>Z790</li>
+                            <li>Z690</li>
+                        </ol>
+                        <button class="b_sl"
+                        id="bs_mb" type="button" onclick="appear('mb_l','bs_mb','bh_mb')">Show Products</button>
+                        <button class="b_hl"
+                        id="bh_mb" type="button" onclick="disappear('mb_l','bs_mb','bh_mb')">Hide Products</button>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <a target="_self" href="case.html"><img alt="cases" src="images/Case 2.png" > </a>
+                            <figcaption class="product-cap">Cases</figcaption>
+                        </figure>
+                        <ol class="hide_l" id="c_l">
+                        </ol>
+                        <button class="b_sl"
+                        id="bs_c" type="button" onclick="appear('c_l','bs_c','bh_c')">Show Products</button>
+                        <button class="b_hl"
+                        id="bh_c" type="button" onclick="disappear('c_l','bs_c','bh_c')">Hide Products</button>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <a target="_self" href="gpu.html"><img alt="GPU" src="images/GPU_2.png" > </a>
+                            <figcaption class="product-cap">GPU</figcaption>
+                        </figure>
+                        <ol class="hide_l" id="gpu_l">
+                            <li>RTX 4090</li>
+                            <li>RTX 4070</li>
+                        </ol>
+                        <button class="b_sl"
+                        id="bs_gpu" type="button" onclick="appear('gpu_l','bs_gpu','bh_gpu')">Show Products</button>
+                        <button class="b_hl"
+                        id="bh_gpu" type="button" onclick="disappear('gpu_l','bs_gpu','bh_gpu')">Hide Products</button>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <a target="_self" href="cpu.html"><img alt="CPU" src="images/CPU 5.png" > </a>
+                            <figcaption class="product-cap">CPU</figcaption>
+                        </figure>
+                        <ol class="hide_l" id="cpu_l">
+                            <li>Intel Core i5</li>
+                            <li>Intel Core i9</li>
+                            <li>AMD Ryzen 7</li>
+                            <li>AMD Ryzen 5</li>
+                        </ol>
+                        <button class="b_sl"
+                        id="bs_cpu" type="button" onclick="appear('cpu_l','bs_cpu','bh_cpu')">Show Products</button>
+                        <button class="b_hl"
+                        id="bh_cpu" type="button" onclick="disappear('cpu_l','bs_cpu','bh_cpu')">Hide Products</button>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <a target="_self" href="storage.html"><img alt="Storage" src="images/hdd 2.png" > </a>
+                            <figcaption class="product-cap">Storage</figcaption>
+                        </figure>
+                        <ol class="hide_l" id="st_l">
+                            <li>990 pro</li>
+                            <li>990pro with heatsink</li>
+                           
+                        </ol>
+                        <button class="b_sl"
+                        id="bs_st" type="button" onclick="appear('st_l','bs_st','bh_st')">Show Products</button>
+                        <button class="b_hl"
+                        id="bh_st" type="button" onclick="disappear('st_l','bs_st','bh_st')">Hide Products</button>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <a target="_self" href="monitors.html"><img alt="Monitors" src="images/monitor.png" > </a>
+                            <figcaption class="product-cap">Monitors</figcaption>
+                        </figure>
+                        <ol class="hide_l" id="mon_l">
+                            <li>AORUS 27 Inch</li>
+                            <li>ASUS 35 Inch</li>
+                            <li>Philips 27 Inch</li>
+                            <li>Acer 27 Inch</li>
+                        </ol>
+                        <button class="b_sl"
+                        id="bs_mon" type="button" onclick="appear('mon_l','bs_mon','bh_mon')">Show Products</button>
+                        <button class="b_hl"
+                        id="bh_mon" type="button" onclick="disappear('mon_l','bs_mon','bh_mon')">Hide Products</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer id="hpft">
+            <div id="ftparent">
+                <div class="ftchild">
+                    <h3>Check out our latest!!</h3>
+                    <section><a title="new products" href="">Latest</a> </section>
+                </div>
+                <div class="ftchild">
+                    <h3>Contact us</h3>
+                    <ul id="ftlist">
+                        <li><a href="feedback.html">Feedback</a> </li>
+                        <li><a href="support.html">Support</a> </li>
+                    </ul>
+                </div>
+                <div class="ftchild">
+                    <h3>Profile</h3>
+                    <section><a href="">My account</a> </section>
+                    <section  >
+                        <h3 id="hfticon" >visit us on:</h3>
+                        <a href="https://www.facebook.com/"><i  class="fa-brands fa-facebook"> </i></a>
+                        <a href="https://www.instagram.com/"><i  class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang-en"><i  class="fa-brands fa-twitter"></i></a>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
