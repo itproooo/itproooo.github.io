@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="zone.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="samasamy1">
+    <ul id="ssnav">
+        <li id="ssl"><a class="ssh" href="homepage.html">Home</a></li>
+        <li id="ssl"><a class="ssn" href="ram.html">News</a></li>
+        <li id="ssl"><a class="ssn" href="feedback.html">Feedback</a></li>
+        <li id="ssl"><a class="ssn" href="support.html">Support</a></li>
+    </ul>
+<div class="ssall">
+    <div class="smsm">
+        <div class="sbord">
+            <img class="simg" src="images/samdownload (1).png">
+            <div class="ssbord">
+            <p id="sp">Corsair VENGEANCE RGB PRO White 32GB <br>(2 X 16GB) 3200MHz CL16 DDR4 Memory<br><h1 id="shh"> PRICE : 4500 &pound;</h1> <br>
+                <table id="sinf">
+                    <tr>
+                        <th>Brand</th>
+                        <td>Corsair</td>
+                    </tr>
+                    <tr>
+                        <th>Availability</th>
+                        <td>Avaliable</td>
+                    </tr>
+                </table>
+                <button class="sbut" onclick="samsamyshfunc()"> Buy </button>
+            </p>
+        </div>
+    </div>
+        <div class="sbord2">
+            <img class="simg2" src="images/samdownload (2).png">
+            <div class="smar">
+            <h2 id="sh2">Discription</h2>
+        <p id="sdis"><h3 id="ssh3">performance heritage</h3><br>each vengeance RGB PRO SL modules starts with our costume performance PCB and tightly screened memory chips to provide incredible frequencies,for maximum bandwidth and tight response times in all problem <br>
+            <h3  id="ssh3">compact form factor</h3><br>standing at just 44mm tall for wider compatibility with air coolers and smaller form factor chassis, each module looks great from any angle<br>
+            <h3  id="ssh3">one step overclocking </h3><br>with intel &reg;XMP 2.0 support, a single BIOS setting is all that's required to seet your memory to it's ideal prformance setting<br>
+            <h3  id="ssh3">Limited Lifetime Warrenty</h3><br>For complete piece-of-mind <br><br>
+        </p></div>
+        
+        <div class="sma">
+            <table id="sinf2">
+            <tr>
+                <th>LED Lighting</th>
+                <td>RGB</td>
+            </tr>
+            <tr>
+                <th>SPD Latency</th>
+                <td>15-15-15-36</td>
+            </tr>
+            <tr>
+                <th>speed rating</th>
+                <td>PC4-25600(3200MHZ)</td>
+            </tr>
+            <tr>
+                <th>SPD voltage</th>
+                <td>1.2V</td>
+            </tr>
+                
+            <tr>
+                <th>SPD Speed</th>
+                <td>2133MHz</td>
+            </tr>
+        </table>
+        <audio controls id="ssashaudio">
+            <source src="audio/2024-04-25-024012_164813.mp3" type="audio/mp3">
+            <source src="audio/2024-04-25-024012_164813.mp3" type="audio/mpeg">
+            your browser deos not support the audio element
+        </audio>
+    </div>
+    <div id="ssmouse" onmouseover="samshOver(this)" onmouseout="samshOut(this)"> Mouse Over Me</div>
+    <button class="samybutt" onclick="samyshorhi()">Another Product</button>
+                <div id="samysho">
+                  <a href="ram4.html">
+                        <img class="samasimg" alt="W3Schools" src="images/samadownload (1).png" >
+                        </a>
+                </div>
+</div>
+    </div>
+</div>
+<footer id="ssfoot">
+    <div class="ssaf">
+        <div class="ssicon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="ssopt">
+            <ul id="ssasid">
+                <li><a href="cpu.html">cpu</a></li>
+                <li><a href="motherboard.html">motherboard</a></li>
+                <li><a href="gbu.html">gbu</a></li>
+                <li><a href="storage.html">storage</a></li>
+                <li><a href="moniters.html">moniters</a></li>
+                <li><a href="case.html">Cases</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sslink">
+        copyright &copy; web pc hardware components
+    </div>
+</footer>
+<script>
+    function samshOver(obj) {
+      obj.innerHTML = "Thank You"
+    }
+
+    function samshOut(obj) {
+     obj.innerHTML = "Mouse Over Me"
+    }
+    let isclicked=true;
+    function samyshorhi(){
+    if(isclicked){
+        document.getElementById('samysho').style.display='block';
+        isclicked=false;
+    }else{
+        document.getElementById('samysho').style.display='none';
+        isclicked=true;
+    }
+}
+function samsamyshfunc() {
+    alert("added to cart")
+}
+</script>
+</body>
+</html>
